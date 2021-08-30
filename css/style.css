@@ -1,0 +1,41 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+ol,ul{
+    list-style: none;
+}
+body{
+    background: url(../images/fashion.jpg) no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+ul.keys{
+    display: flex;
+}
+ul.keys li.key{
+    padding: 10px 20px;
+    border: 2px solid #000;
+    margin-right: 50px;
+    text-align: center;
+    transition: 0.5s;
+}
+ul.keys li.key:last-child{
+    margin-right: 0;
+}
+ul.keys li.key kbd{
+    font-size: 30px;
+    font-weight: 700;
+}
+ul.keys li.key span.music{
+    display: block;
+}
+ul.keys li.key.playing{
+    border: 2px solid orange;
+    transform: scale(1.1);
+    transition: 0.5s;
+}
